@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Poppins:ital,wght@0,100;0,300;1,100;1,200;1,300&family=Quantico:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.events {
+    /* margin-top: 50rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #273440; */
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    line-height: 1rem;
+    padding: 0.8rem;
+    z-index: 2;
+    margin-bottom: 15rem;
+}
+
+.events h1 {
+    z-index: 2;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    /* color: #0d1526; */
+    /* background: linear-gradient(180deg, #FFF -11.67%, #CAB8A6 145.83%); */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    filter: drop-shadow(6px 4px 4px #000);
+    /* animation: 2s anim-popoutin ease;
+    animation-timeline: view(); */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+}
+
+@keyframes anim-popoutin {
+    0% {
+        color: black;
+        transform: scale(0);
+        opacity: 0;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    25% {
+        color: #CAB8A6;
+        transform: scale(2);
+        opacity: 1;
+        text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+        color: F2D8C9;
+        transform: scale(1);
+        opacity: 1;
+        text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        /* animate nothing to add pause at the end of animation */
+        transform: scale(1);
+        opacity: 1;
+        text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+.eventlist {
+
+    margin: 10rem;
+    /* margin-top: -30rem; */
+    margin-bottom: 32rem;
+    padding: 2rem;
+    z-index: -1;
+    /* background-color: aliceblue; */
+}
+
+.row {
+    display: flex;
+
+}
+
+.box {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    background: radial-gradient(ellipse at bottom, #1f496f 0%, #192643 80%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 1.25rem;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-duration: 1ms;
+
+}
+
+.box2,
+.box3,
+.box6,
+.box7,
+.box10,
+.box11,
+.box14,
+.box15 {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.box h2,
+.box p {
+    background: linear-gradient(90deg, white, transparent);
+    background-size: 200%;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    animation: reveal both linear;
+    animation-timeline: view();
+    background-repeat: no-repeat;
+    animation-range: entry 50% cover 50%;
+    animation-duration: 1ms;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.box h2 {
+    font-family: 'Quantico', sans-serif;
+    font-size: 1.4em;
+
+
+}
+
+.eleft {
+    animation: faderight both linear;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-duration: 1ms;
+}
+
+.eright {
+    animation: fadeleft both linear;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    animation-duration: 1ms;
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-1.25rem)
+    }
+}
+
+@keyframes faderight {
+    from {
+        transform: translateX(-18%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeleft {
+    from {
+        transform: translateX(+18%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+
+}
+
+
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes reveal {
+
+    from {
+        background-position-x: 200%;
+    }
+
+    to {
+        background-position-x: 0%;
+
+    }
+
+    50% {
+        background-position-x: 180%;
+    }
+
+    75% {
+        background-position-x: 150%;
+
+    }
+
+    90% {
+        background-position: 0%;
+    }
+
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    background: url("../Assets/images/Launchpad.png") no-repeat center/cover;
+
+}
+
+.box4 {
+    background: url("../Assets/images/Quest-Youth.png") no-repeat center/cover;
+    /* background-image: url("./images/Quest-Youth.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box5 {
+    background: url("../Assets/images/Startup-spark.png") no-repeat center/cover;
+    /* background-image: url("./images/Startup-spark.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box8 {
+    background: url("../Assets/images/Cultural-event.png") no-repeat center/cover;
+    /* background-image: url("./images/Cultural-event.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box9 {
+    background: url("../Assets/images/Visionary-Ventures.png") no-repeat center/cover;
+    /* background-image: url("./images/Visionary-Ventures.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box12 {
+    background: url("../Assets/images/Bizblitz.png") no-repeat center/cover;
+    /* background-image: url("./images/Bizblitz.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box13 {
+    background: url("../Assets/images/Seedstart-summit.png") no-repeat center/cover;
+    /* background-image: url("./images/Seedstart-summit.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+.box16 {
+    background: url("../Assets/images/Pitch-perfect.png") no-repeat center/cover;
+    /* background-image: url("./images/Pitch-perfect.png");
+    background-size: cover;
+    background-position: center center; */
+}
+
+
+.ebtn {
+    margin-bottom: -1.8rem;
+    width: 8rem;
+    height: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: #273440;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+.ebtn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.ebtn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.ebtn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+
+
+#estars {
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(ellipse at top, #1f496f 0%, #0d1526 100%); */
+    /* background-color: aqua; */
+}
+
+@media ((max-width:55rem)) {
+    .eventlist {
+        /* margin: 2rem; */
+        margin-top: 7rem;
+        margin-bottom: 45rem;
+
+        padding-right: 1rem;
+        padding-left: 1rem;
+        /* background-color: aliceblue; */
+
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .row2,
+    .row4,
+    .row6,
+    .row8 {
+        flex-direction: column-reverse;
+    }
+
+    .box {
+        font-size: 1.9em;
+        width: 100%;
+        height: 25rem;
+        padding: 0;
+    }
+
+    .box p {
+        font-size: 0.5em;
+
+    }
+
+    .ebtn {
+        margin-bottom: 1rem;
+    }
+
+}
